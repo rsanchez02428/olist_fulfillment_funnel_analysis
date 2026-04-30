@@ -2,13 +2,11 @@ USE WAREHOUSE ANALYST_WH;
 USE DATABASE OLIST_ANALYTICS;
 USE SCHEMA OLIST_ANALYTICS.RAW;
 
--- ==================================
+-- ==========================================
 -- Query 1: Profile the Orders Table
--- ==================================
+-- Profile every key colum in the orders table
+-- ===========================================
 
-USE SCHEMA OLIST_ANALYTICS.RAW;
-
--- Profile every key column in the orders table
 SELECT
     COUNT(*) AS total_orders,
     COUNT(DISTINCT customer_id) AS unique_customers, 
